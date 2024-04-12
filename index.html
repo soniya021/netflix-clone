@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+<!-- NAVBAR CREATION -->
+<div class="nav" id="nav">
+  <img src="/netflix-images/netflix-logo.png" alt="" class="nav-logo">
+  <img src="/netflix-images/netflix-avatar.png" alt="" class="nav-avatar">
+</div>
+
+
     <!-- BANNER SECTION -->
     <div class="banner">
       <div class="banner_contents">
@@ -21,8 +28,11 @@
           carry out an ambitious plan that involves entering the Royal Mint of
           Spain, and escaping with €984 million.
         </div>
+       
       </div>
+      <!-- <div class="banner_fadebottom"></div> -->
     </div>
+   
 
     <!-- BUILDING MOVIE SECTION -->
     <div class="row">
@@ -164,5 +174,15 @@
         <img src="/netflix-images/small-movie8.jpg" class="row__poster" />
       </div>
     </div>
+    <script>
+      const nav=document.getElementById('nav');
+      window.addEventListener('scroll',function(){
+        if(window.scrollY>=100){
+          nav.classList.add('nav_black')
+        }else{
+          nav.classList.remove('nav_black')
+        }
+      });
+    </script>
   </body>
 </html>
